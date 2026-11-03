@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About Uwepo Church – Our story, vision, mission, Pastor Ezekiel Musyoka, and core values." />
+  <title>About Us | Uwepo Church</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { gold:{50:'#fffbeb',100:'#fef3c7',200:'#fde68a',300:'#fcd34d',400:'#fbbf24',500:'#c9a227',600:'#b8860b',700:'#92660a',800:'#78520a',900:'#5c3d08'}, charcoal:'#1a1a1a', cream:'#faf8f3' }, fontFamily:{ serif:['Playfair Display','Georgia','serif'], sans:['Inter','system-ui','sans-serif'] } } }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="font-sans bg-white text-charcoal antialiased">
+
+  <!-- NAV -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-charcoal shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3 flex-shrink-0">
+          <img src="assets/logo.png" alt="Uwepo Church Logo" class="h-14 w-14 object-contain rounded-full nav-logo" />
+          <div class="hidden sm:block">
+            <p class="font-serif font-bold text-lg leading-tight text-white">UWEPO CHURCH</p>
+            <p class="text-xs text-gold-300">Everyday In The Presence</p>
+          </div>
+        </a>
+        <ul class="hidden lg:flex items-center gap-8">
+          <li><a href="index.html"       class="nav-link text-sm font-medium">Home</a></li>
+          <li><a href="about.html"       class="nav-link text-sm font-medium active-link">About</a></li>
+          <li><a href="services.html"    class="nav-link text-sm font-medium">Service Times</a></li>
+          <li><a href="ministries.html"  class="nav-link text-sm font-medium">Ministries</a></li>
+          <li><a href="media.html"       class="nav-link text-sm font-medium">Media</a></li>
+          <li><a href="contact.html"     class="nav-link text-sm font-medium">Contact</a></li>
+        </ul>
+        <div class="flex items-center gap-3">
+          <a href="https://youtube.com/@pastorezekiel.m.k?si=iZg32hn9oh6S53fT" target="_blank"
+             class="hidden sm:inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors shadow-lg">
+            <i data-lucide="play-circle" class="w-4 h-4"></i> Watch Online
+          </a>
+          <button id="menu-btn" class="lg:hidden p-2 text-white hover:text-gold-400 transition-colors">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden bg-charcoal border-t border-gold-700">
+      <ul class="px-4 py-4 space-y-1">
+        <li><a href="index.html"      class="block px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold-400 rounded-lg">Home</a></li>
+        <li><a href="about.html"      class="block px-3 py-2 text-sm font-medium text-gold-400 rounded-lg">About</a></li>
+        <li><a href="services.html"   class="block px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold-400 rounded-lg">Service Times</a></li>
+        <li><a href="ministries.html" class="block px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold-400 rounded-lg">Ministries</a></li>
+        <li><a href="media.html"      class="block px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold-400 rounded-lg">Media</a></li>
+        <li><a href="contact.html"    class="block px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold-400 rounded-lg">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="pt-20 bg-charcoal text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+      <p class="text-gold-400 font-semibold text-sm uppercase tracking-widest mb-3">Our Story</p>
+      <h1 class="font-serif text-5xl sm:text-6xl font-bold mb-5">About Us</h1>
+      <div class="w-16 h-1 bg-gold-500 mx-auto rounded-full mb-5"></div>
+      <p class="text-gray-400 max-w-2xl mx-auto leading-relaxed">
+        A vision born of God in 2019 — a people called to live everyday in the presence of God and carry His glory to the ends of the earth.
+      </p>
+      <!-- Breadcrumb -->
+      <div class="mt-8 flex items-center justify-center gap-2 text-sm text-gray-500">
+        <a href="index.html" class="hover:text-gold-400 transition-colors">Home</a>
+        <i data-lucide="chevron-right" class="w-4 h-4"></i>
+        <span class="text-gold-400">About</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR STORY -->
+  <section class="py-20 bg-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center mb-20" data-animate>
+        <div>
+          <p class="text-gold-600 font-semibold text-sm uppercase tracking-widest mb-4">How It Began</p>
+          <h2 class="font-serif text-4xl font-bold text-charcoal mb-6">The Uwepo Church Story</h2>
+          <div class="space-y-4 text-gray-600 leading-relaxed">
+            <p>This is a vision born of God in <strong class="text-charcoal">2019</strong>. It came after a powerful encounter with the Presence of God while in <strong class="text-charcoal">Fedha</strong> — Pastor Ezekiel saw God's presence invading the earth and Him being glorified everywhere through His select and sent men.</p>
+            <p>The vision began to find maturity in <strong class="text-charcoal">2022</strong> and finally began to manifest in <strong class="text-charcoal">2024</strong>. The name <em>Uwepo Church</em> was received on <strong class="text-charcoal">28th March 2024</strong>, consistent with the first location of the ministry.</p>
+            <p>The original identity is <strong class="text-charcoal">Parousia Global</strong> — a sent people who move with the presence of God and His manifestations all over the whole earth, in every sphere of human interaction. The defining theme: <em class="text-gold-600 font-semibold">A People of the Presence.</em></p>
+            <p>Parousia Global (Uwepo Church as the first expression) is not a denomination, but rather a <strong class="text-charcoal">movement — a family of believers</strong> who have a desire to see Jesus seen, known and glorified everywhere on earth through them.</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-5">
+          <div class="bg-white rounded-2xl p-6 shadow-sm border border-gold-100 text-center">
+            <div class="text-4xl font-serif font-bold text-gold-500 mb-1">2019</div>
+            <p class="text-gray-600 text-sm">Vision received</p>
+          </div>
+          <div class="bg-white rounded-2xl p-6 shadow-sm border border-gold-100 text-center">
+            <div class="text-4xl font-serif font-bold text-gold-500 mb-1">2024</div>
+            <p class="text-gray-600 text-sm">Church launched</p>
+          </div>
+          <div class="bg-gold-500 rounded-2xl p-6 text-center col-span-2">
+            <div class="text-2xl font-serif font-bold text-white mb-1">Apostolic Ministry</div>
+            <p class="text-gold-100 text-sm">With a mandate to the ends of the World</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mission & Vision -->
+      <div class="grid md:grid-cols-2 gap-8 mb-20" data-animate>
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-gold-100 hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-gold-100 rounded-xl flex items-center justify-center mb-5">
+            <i data-lucide="target" class="w-6 h-6 text-gold-600"></i>
+          </div>
+          <h3 class="font-serif text-2xl font-bold text-charcoal mb-3">Mission Statement</h3>
+          <p class="text-gray-600 leading-relaxed">Through God's love, wisdom and power; to influence men to submit to the Lordship of Christ Jesus — until every knee bows and every tongue confesses that Jesus Christ is Lord.</p>
+          <p class="mt-4 text-gold-600 text-xs font-semibold italic">Psalm 72:11</p>
+        </div>
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-gold-100 hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-gold-100 rounded-xl flex items-center justify-center mb-5">
+            <i data-lucide="eye" class="w-6 h-6 text-gold-600"></i>
+          </div>
+          <h3 class="font-serif text-2xl font-bold text-charcoal mb-3">Vision Statement</h3>
+          <p class="text-gray-600 leading-relaxed">To see Jesus Glorified, lives changed, destinies actualized and God's will effected — through a people of His presence who carry Him into every sphere of human interaction on the earth.</p>
+          <p class="mt-4 text-gold-600 text-xs font-semibold italic">John 12:32</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PASTOR SECTION -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16" data-animate>
+        <p class="text-gold-600 font-semibold text-sm uppercase tracking-widest mb-3">Leadership</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-bold text-charcoal">Meet Our Leaders</h2>
+        <div class="mt-4 w-16 h-1 bg-gold-500 mx-auto rounded-full"></div>
+      </div>
+      <div class="grid lg:grid-cols-2 gap-16 items-center" data-animate>
+        <div class="relative">
+          <div class="absolute -inset-4 bg-gradient-to-br from-gold-200 to-gold-400 rounded-3xl opacity-20 blur-2xl"></div>
+          <div class="relative bg-gradient-to-br from-gold-100 to-gold-200 rounded-3xl overflow-hidden aspect-[4/5] max-w-md mx-auto shadow-2xl">
+            <img src="assets/pastor-couple.jpg" alt="Pastor Ezekiel Musyoka and Faith Musyoka" class="w-full h-full object-cover object-top" />
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-charcoal/90 to-transparent p-6">
+              <p class="text-white font-serif text-xl font-bold">Pastor Ezekiel Musyoka</p>
+              <p class="text-gold-300 text-sm">Senior Pastor &amp; Founder · with Faith Musyoka</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="text-gold-600 font-semibold text-sm uppercase tracking-widest mb-4">Senior Pastor &amp; Founder</p>
+          <h3 class="font-serif text-3xl sm:text-4xl font-bold text-charcoal mb-6">Pastor Ezekiel Musyoka</h3>
+          <div class="space-y-4 text-gray-600 leading-relaxed">
+            <p class="italic text-lg text-charcoal font-serif border-l-4 border-gold-400 pl-4">
+              "I saw God's presence invading the earth and Him being glorified everywhere through His select and sent men."
+            </p>
+            <p>Pastor Ezekiel Musyoka received the vision for Uwepo Church in <strong class="text-charcoal">2019</strong> after a powerful encounter with the Presence of God while in Fedha. The vision matured through 2022 and began to manifest in <strong class="text-charcoal">2024</strong>.</p>
+            <p>Together with Faith Musyoka, Pastor Ezekiel leads this <strong class="text-charcoal">Apostolic ministry</strong> with a global mandate — marked by a deep hunger for God, powerful preaching, fervent prayer, and a genuine love for people from all walks of life.</p>
+            <p>Whether you are searching for purpose, healing, community, or simply a place to belong — <strong class="text-charcoal">you have found your home.</strong></p>
+          </div>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="contact.html" class="inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-600 text-white font-semibold px-6 py-3 rounded-full transition-colors shadow-lg">
+              <i data-lucide="calendar" class="w-4 h-4"></i> Plan a Visit
+            </a>
+            <a href="https://youtube.com/@pastorezekiel.m.k?si=iZg32hn9oh6S53fT" target="_blank"
+               class="inline-flex items-center gap-2 border-2 border-gold-500 text-gold-600 hover:bg-gold-50 font-semibold px-6 py-3 rounded-full transition-colors">
+              <i data-lucide="play" class="w-4 h-4"></i> Watch Sermons
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORE VALUES -->
+  <section class="py-20 bg-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14" data-animate>
+        <p class="text-gold-600 font-semibold text-sm uppercase tracking-widest mb-3">Our Foundations</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-bold text-charcoal">Core Values</h2>
+        <div class="mt-4 w-16 h-1 bg-gold-500 mx-auto rounded-full"></div>
+        <p class="mt-5 text-gray-500 max-w-xl mx-auto">The foundational, deeply held principles that guide our culture, our daily decisions, and every ministry action.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6" data-animate>
+        <div class="p-7 bg-white rounded-2xl shadow-sm border border-gold-100 hover:border-gold-400 hover:shadow-md transition-all">
+          <div class="text-4xl mb-4">❤️</div>
+          <h4 class="font-serif font-bold text-xl text-charcoal mb-2">Love</h4>
+          <p class="text-gray-500 text-sm leading-relaxed mb-3">We believe in God's unconditional love. We build a family of mutual love through evangelism, charity, teaching, and fellowship where all feel included.</p>
+          <p class="text-gold-600 text-xs font-semibold">Jn 3:16 · Mat 22:37-39 · 1 Jn 4:19</p>
+        </div>
+        <div class="p-7 bg-white rounded-2xl shadow-sm border border-gold-100 hover:border-gold-400 hover:shadow-md transition-all">
+          <div class="text-4xl mb-4">📖</div>
+          <h4 class="font-serif font-bold text-xl text-charcoal mb-2">Word</h4>
+          <p class="text-gray-500 text-sm leading-relaxed mb-3">Founded on the pure Word of God — alive and working now. We offer pure, balanced and uncorrupted doctrine that transforms and matures every believer.</p>
+          <p class="text-gold-600 text-xs font-semibold">Matthew 28:19-20</p>
+        </div>
+        <div class="p-7 bg-white rounded-2xl shadow-sm border border-gold-100 hover:border-gold-400 hover:shadow-md transition-all">
+          <div class="text-4xl mb-4">🙏</div>
+          <h4 class="font-serif font-bold text-xl text-charcoal mb-2">Prayer</h4>
+          <p class="text-gray-500 text-sm leading-relaxed mb-3">We develop a prayer culture and believe in all kinds of prayer. Revival-conscious — stirring up men in prayer until there is a release of the Spirit.</p>
+          <p class="text-gold-600 text-xs font-semibold">Jer 33:3 · Luke 18:1</p>
+        </div>
+        <div class="p-7 bg-white rounded-2xl shadow-sm border border-gold-100 hover:border-gold-400 hover:shadow-md transition-all">
+          <div class="text-4xl mb-4">✨</div>
+          <h4 class="font-serif font-bold text-xl text-charcoal mb-2">Supernatural</h4>
+          <p class="text-gray-500 text-sm leading-relaxed mb-3">We live for God and manifest His superiority over all things. We are a supernatural Kingdom people — miracles and His power are part of our everyday lives.</p>
+          <p class="text-gold-600 text-xs font-semibold">1 Cor 4:20</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div>
+          <div class="flex items-center gap-3 mb-5">
+            <img src="assets/logo-dark.png" alt="Uwepo Church" class="h-14 w-14 object-contain rounded-full" />
+            <div><p class="font-serif font-bold text-white text-lg leading-tight">UWEPO CHURCH</p><p class="text-xs text-gold-400">Everyday In The Presence</p></div>
+          </div>
+          <p class="text-gray-400 text-sm leading-relaxed mb-5">Led by Pastor Ezekiel Musyoka &amp; Faith Musyoka. A People of the Presence.</p>
+          <div class="flex gap-3">
+            <a href="https://youtube.com/@pastorezekiel.m.k?si=iZg32hn9oh6S53fT" target="_blank" class="w-9 h-9 bg-red-600 hover:bg-red-700 rounded-full flex items-center justify-center transition-colors"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="white"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+            <a href="https://www.facebook.com/profile.php?id=61558604113283" target="_blank" class="w-9 h-9 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-colors"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="white"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="mailto:uwepochurch@gmail.com" class="w-9 h-9 bg-gold-600 hover:bg-gold-500 rounded-full flex items-center justify-center transition-colors"><i data-lucide="mail" class="w-4 h-4 text-white"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white text-sm uppercase tracking-widest mb-5 border-b border-white/10 pb-3">Pages</h4>
+          <ul class="space-y-3">
+            <li><a href="index.html"      class="text-gray-400 hover:text-gold-400 text-sm transition-colors">Home</a></li>
+            <li><a href="about.html"      class="text-gold-400 text-sm">About Us</a></li>
+            <li><a href="services.html"   class="text-gray-400 hover:text-gold-400 text-sm transition-colors">Service Times</a></li>
+            <li><a href="ministries.html" class="text-gray-400 hover:text-gold-400 text-sm transition-colors">Ministries</a></li>
+            <li><a href="media.html"      class="text-gray-400 hover:text-gold-400 text-sm transition-colors">Media &amp; Sermons</a></li>
+            <li><a href="contact.html"    class="text-gray-400 hover:text-gold-400 text-sm transition-colors">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white text-sm uppercase tracking-widest mb-5 border-b border-white/10 pb-3">Services</h4>
+          <ul class="space-y-3 text-sm text-gray-400">
+            <li class="flex items-center gap-2"><i data-lucide="sun" class="w-3.5 h-3.5 text-gold-500"></i> Sunday: 8:00 AM &amp; 10:30 AM</li>
+            <li class="flex items-center gap-2"><i data-lucide="book-open" class="w-3.5 h-3.5 text-gold-500"></i> Wednesday: 6:00 PM</li>
+            <li class="flex items-center gap-2"><i data-lucide="flame" class="w-3.5 h-3.5 text-gold-500"></i> Friday: 7:00 PM</li>
+            <li class="flex items-center gap-2"><i data-lucide="sunrise" class="w-3.5 h-3.5 text-gold-500"></i> Mon–Sat: 6:00 AM</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white text-sm uppercase tracking-widest mb-5 border-b border-white/10 pb-3">We Believe</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-500 mt-0.5 flex-shrink-0"></i> The Holy Trinity</li>
+            <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-500 mt-0.5 flex-shrink-0"></i> Death &amp; resurrection of Jesus Christ</li>
+            <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-500 mt-0.5 flex-shrink-0"></i> Salvation by grace through faith</li>
+            <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-500 mt-0.5 flex-shrink-0"></i> Power of the Holy Spirit</li>
+            <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-500 mt-0.5 flex-shrink-0"></i> Divine healing &amp; the supernatural</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-4 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-gray-500 text-sm">&copy; <span id="current-year"></span> Uwepo Church · Parousia Global. All rights reserved.</p>
+        <p class="text-gray-600 text-xs"><em>"Everyday In The Presence"</em> &bull; Love · Word · Prayer · Supernatural</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Uwepo Church Service Times – Sunday services, mid-week Bible study, prayer nights, and daily morning prayer." />
+  <title>Service Times | Uwepo Church</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { gold:{50:'#fffbeb',100:'#fef3c7',200:'#fde68a',300:'#fcd34d',400:'#fbbf24',500:'#c9a227',600:'#b8860b',700:'#92660a',800:'#78520a',900:'#5c3d08'}, charcoal:'#1a1a1a', cream:'#faf8f3' }, fontFamily:{ serif:['Playfair Display','Georgia','serif'], sans:['Inter','system-ui','sans-serif'] } } }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="font-sans bg-white text-charcoal antialiased">
+
+  <!-- NAV -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-charcoal shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3 flex-shrink-0">
+          <img src="assets/logo.png" alt="Uwepo Church Logo" class="h-14 w-14 object-contain rounded-full nav-logo" />
+          <div class="hidden sm:block">
+            <p class="font-serif font-bold text-lg leading-tight text-white">UWEPO CHURCH</p>
+            <p class="text-xs text-gold-300">Everyday In The Presence</p>
+          </div>
+        </a>
+        <ul class="hidden lg:flex items-center gap-8">
+          <li><a href="index.html"       class="nav-link text-sm font-medium">Home</a></li>
+          <li><a href="about.html"       class="nav-link text-sm font-medium">About</a></li>
+          <li><a href="services.html"    class="nav-link text-sm font-medium active-link">Service Times</a></li>
+          <li><a href="ministries.html"  class="nav-link text-sm font-medium">Ministries</a></li>
+          <li><a href="media.html"       class="nav-link text-sm font-medium">Media</a></li>
+          <li><a href="contact.html"     class="nav-link text-sm font-medium">Contact</a></li>
+        </ul>
+        <div class="flex items-center gap-3">
+          <a href="https://youtube.com/@pastorezekiel.m.k?si=iZg32hn9oh6S53fT" target="_blank"
+             class="hidden sm:inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors shadow-lg">
+            <i data-lucide="play-circle" class="w-4 h-4"></i> Watch Online
+          </a>
+          <button id="menu-btn" class="lg:hidden p-2 text-white hover:text-gold-400"><i data-lucide="menu" class="w-6 h-6"></i></button>
+        </div>
+      </nav>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden bg-charcoal border-t border-gold-700">
+      <ul class="px-4 py-4 space-y-1">
+        <li><a href="index.html"      class="block px-3 py-2 text-sm text-gray-300 hover:text-gold-400 rounded-lg">Home</a></li>
+        <li><a href="about.html"      class="block px-3 py-2 text-sm text-gray-300 hover:text-gold-400 rounded-lg">About</a></li>
+        <li><a href="services.html"   class="block px-3 py-2 text-sm text-gold-400 rounded-lg">Service Times</a></li>
+        <li><a href="ministries.html" class="block px-3 py-2 text-sm text-gray-300 hover:text-gold-400 rounded-lg">Ministries</a></li>
+        <li><a href="media.html"      class="block px-3 py-2 text-sm text-gray-300 hover:text-gold-400 rounded-lg">Media</a></li>
+        <li><a href="contact.html"    class="block px-3 py-2 text-sm text-gray-300 hover:text-gold-400 rounded-lg">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="pt-20 bg-charcoal text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+      <p class="text-gold-400 font-semibold text-sm uppercase tracking-widest mb-3">Join Us</p>
+      <h1 class="font-serif text-5xl sm:text-6xl font-bold mb-5">Service Times</h1>
+      <div class="w-16 h-1 bg-gold-500 mx-auto rounded-full mb-5"></div>
+      <p class="text-gray-400 max-w-xl mx-auto">Come and experience the presence of God with us. All are welcome — bring a friend!</p>
+      <div class="mt-8 flex items-center justify-center gap-2 text-sm text-gray-500">
+        <a href="index.html" class="hover:text-gold-400 transition-colors">Home</a>
+        <i data-lucide="chevron-right" class="w-4 h-4"></i>
+        <span class="text-gold-400">Service Times</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE CARDS -->
+  <section class="py-20 bg-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Sunday Services -->
+      <div class="mb-16" data-animate>
+        <div class="flex items-center gap-3 mb-8">
+          <div class="w-10 h-10 bg-gold-500 rounded-full flex items-center justify-center flex-shrink-0">
+            <i data-lucide="sun" class="w-5 h-5 text-white"></i>
+          </div>
+          <h2 class="font-serif text-3xl font-bold text-charcoal">Sunday Services</h2>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-white rounded-2xl p-8 shadow-sm border border-gold-100 hover:shadow-md hover:border-gold-300 transition-all">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-semibold bg-gold-100 text-gold-700 px-3 py-1 rounded-full">Every Sunday</span>
+              <span class="text-2xl font-serif font-bold text-gold-500">8:00 AM</span>
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-charcoal mb-2">First Service</h3>
+            <p class="text-gray-500 text-sm leading-relaxed mb-5">Start your Sunday in the presence of God with powerful worship and the Word. A quieter, intimate experience.</p>
+            <div class="flex items-center gap-2 text-gray-400 text-sm"><i data-lucide="map-pin" class="w-4 h-4 text-gold-500"></i> Uwepo Church Main Auditorium</div>
+          </div>
+          <div class="bg-gradient-to-br from-gold-500 to-gold-700 rounded-2xl p-8 shadow-xl text-white relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+            <div class="relative z-10">
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-semibold bg-white/20 text-white px-3 py-1 rounded-full">Every Sunday</span>
+                <span class="text-2xl font-serif font-bold">10:30 AM</span>
+              </div>
+              <h3 class="font-serif text-2xl font-bold mb-2">Second Service</h3>
+              <p class="text-gold-100 text-sm leading-relaxed mb-5">A vibrant family service with dynamic worship, children's church, and powerful preaching of the Word.</p>
+              <div class="flex items-center gap-2 text-gold-200 text-sm"><i data-lucide="map-pin" class="w-4 h-4"></i> Uwepo Church Main Auditorium</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Weekly Gatherings -->
+      <div class="mb-16" data-animate>
+        <div class="flex items-center gap-3 mb-8">
+          <div class="w-10 h-10 bg-gold-500 rounded-full flex items-center justify-center flex-shrink-0">
+            <i data-lucide="calendar" class="w-5 h-5 text-white"></i>
+          </div>
+          <h2 class="font-serif text-3xl font-bold text-charcoal">Weekly Gatherings</h2>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-white rounded-2xl p-8 shadow-sm border border-gold-100 hover:shadow-md hover:border-gold-300 transition-all">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-semibold bg-gold-100 text-gold-700 px-3 py-1 rounded-full">Every Wednesday</span>
+              <span class="text-xl font-serif font-bold text-gold-500">6:00 PM</span>
+            </div>
+            <div class="w-12 h-12 bg-gold-100 rounded-xl flex items-center justify-center mb-4">
+              <i data-lucide="book-open" class="w-6 h-6 text-gold-600"></i>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-charcoal mb-2">Mid-Week Bible Study</h3>
+            <p class="text-gray-500 text-sm leading-relaxed mb-5">Dig deep into the Word of God. Pure, balanced and uncorrupted teaching that transforms and matures every believer.</p>
+            <div class="flex items-center gap-2 text-gray-400 text-sm"><i data-lucide="map-pin" class="w-4 h-4 text-gold-500"></i> Uwepo Church Fellowship Hall</div>
+          </div>
+          <div class="bg-white rounded-2xl p-8 shadow-sm border border-gold-100 hover:shadow-md hover:border-gold-300 transition-all">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-semibold bg-gold-100 text-gold-700 px-3 py-1 rounded-full">Every Friday</span>
+              <span class="text-xl font-serif font-bold text-gold-500">7:00 PM</span>
+            </div>
+            <div class="w-12 h-12 bg-gold-100 rounded-xl flex items-center justify-center mb-4">
+              <i data-lucide="flame" class="w-6 h-6 text-gold-600"></i>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-charcoal mb-2">Prayer Night</h3>
+            <p class="text-gray-500 text-sm leading-relaxed mb-5">Come tarry in the presence of God. We believe in the power of corporate prayer and intercession for all men and nations.</p>
+            <div class="flex items-center gap-2 text-gray-400 text-sm"><i data-lucide="map-pin" class="w-4 h-4 text-gold-500"></i> Uwepo Church Main Auditorium</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Daily & Special -->
+      <div class="grid md:grid-cols-2 gap-6" data-animate>
+        <div class="bg-charcoal rounded-2xl p-8 text-white">
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-xs font-semibold bg-gold-500/20 text-gold-300 px-3 py-1 rounded-full">Monday – Saturday</span>
+            <span class="text-xl font-serif font-bold text-gold-400">6:00 AM</span>
+          </div>
+          <div class="w-12 h-12 bg-gold-500/20 rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="sunrise" class="w-6 h-6 text-gold-400"></i>
+          </div>
+          <h3 class="font-serif text-xl font-bold mb-2">Early Morning Prayer</h3>
+          <p class="text-gray-400 text-sm leading-relaxed mb-5">Seek His face at the break of dawn. Everyday in the Presence — available online and in-person.</p>
+          <div class="flex items-center gap-2 text-gray-500 text-sm"><i data-lucide="video" class="w-4 h-4 text-gold-500"></i> YouTube · Facebook · In-Person</div>
+        </div>
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-gold-100">
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-xs font-semibold bg-gold-100 text-gold-700 px-3 py-1 rounded-full">As Announced</span>
+            <i data-lucide="star" class="w-5 h-5 text-gold-500"></i>
+          </div>
+          <div class="w-12 h-12 bg-gold-100 rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="sparkles" class="w-6 h-6 text-gold-600"></i>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-charcoal mb-2">Special Services</h3>
+          <p class="text-gray-500 text-sm leading-relaxed mb-5">Healing crusades, prophetic nights, and revival meetings — God moves here. Watch our social media for announcements.</p>
+          <div class="flex gap-3">
+            <a href="https://youtube.com/@pastorezekiel.m.k?si=iZg32hn9oh6S53fT" target="_blank" class="flex items-center gap-1.5 bg-red-600 hover:bg-red-700 text-white text-xs font-semibold px-3 py-2 rounded-full transition-colors">
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg> YouTube
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61558604113283" target="_blank" class="flex items-center gap-1.5 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold px-3 py-2 rounded-full transition-colors">
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg> Facebook
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Online Banner -->
+      <div class="mt-12 bg-gradient-to-r from-gold-500 to-gold-700 rounded-2xl p-8 text-white text-center" data-animate>
+        <i data-lucide="wifi" class="w-10 h-10 mx-auto mb-4 text-gold-200"></i>
+        <h3 class="font-serif text-2xl font-bold mb-2">Can't Make It In Person?</h3>
+        <p class="text-gold-100 mb-6">Join us online — we stream all major services on YouTube and Facebook Live.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="https://youtube.com/@pastorezekiel.m.k?si=iZg32hn9oh6S53fT" target="_blank"
+             class="inline-flex items-center gap-2 bg-white text-red-600 font-semibold px-6 py-3 rounded-full hover:bg-gold-50 transition-colors">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            Watch on YouTube
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61558604113283" target="_blank"
+             class="inline-flex items-center gap-2 bg-white text-blue-600 font-semibold px-6 py-3 rounded-full hover:bg-gold-50 transition-colors">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            Watch on Facebook
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div>
+          <div class="flex items-center gap-3 mb-5"><img src="assets/logo-dark.png" alt="Uwepo Church" class="h-14 w-14 object-contain rounded-full" /><div><p class="font-serif font-bold text-white text-lg leading-tight">UWEPO CHURCH</p><p class="text-xs text-gold-400">Everyday In The Presence</p></div></div>
+          <p class="text-gray-400 text-sm mb-5">Led by Pastor Ezekiel Musyoka &amp; Faith Musyoka.</p>
+          <div class="flex gap-3">
+            <a href="https://youtube.com/@pastorezekiel.m.k?si=iZg32hn9oh6S53fT" target="_blank" class="w-9 h-9 bg-red-600 hover:bg-red-700 rounded-full flex items-center justify-center transition-colors"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="white"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+            <a href="https://www.facebook.com/profile.php?id=61558604113283" target="_blank" class="w-9 h-9 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-colors"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="white"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="mailto:uwepochurch@gmail.com" class="w-9 h-9 bg-gold-600 hover:bg-gold-500 rounded-full flex items-center justify-center transition-colors"><i data-lucide="mail" class="w-4 h-4 text-white"></i></a>
+          </div>
+        </div>
+        <div><h4 class="font-semibold text-white text-sm uppercase tracking-widest mb-5 border-b border-white/10 pb-3">Pages</h4><ul class="space-y-3"><li><a href="index.html" class="text-gray-400 hover:text-gold-400 text-sm transition-colors">Home</a></li><li><a href="about.html" class="text-gray-400 hover:text-gold-400 text-sm transition-colors">About Us</a></li><li><a href="services.html" class="text-gold-400 text-sm">Service Times</a></li><li><a href="ministries.html" class="text-gray-400 hover:text-gold-400 text-sm transition-colors">Ministries</a></li><li><a href="media.html" class="text-gray-400 hover:text-gold-400 text-sm transition-colors">Media &amp; Sermons</a></li><li><a href="contact.html" class="text-gray-400 hover:text-gold-400 text-sm transition-colors">Contact Us</a></li></ul></div>
+        <div><h4 class="font-semibold text-white text-sm uppercase tracking-widest mb-5 border-b border-white/10 pb-3">Services</h4><ul class="space-y-3 text-sm text-gray-400"><li class="flex items-center gap-2"><i data-lucide="sun" class="w-3.5 h-3.5 text-gold-500"></i> Sunday: 8:00 AM &amp; 10:30 AM</li><li class="flex items-center gap-2"><i data-lucide="book-open" class="w-3.5 h-3.5 text-gold-500"></i> Wednesday: 6:00 PM</li><li class="flex items-center gap-2"><i data-lucide="flame" class="w-3.5 h-3.5 text-gold-500"></i> Friday: 7:00 PM</li><li class="flex items-center gap-2"><i data-lucide="sunrise" class="w-3.5 h-3.5 text-gold-500"></i> Mon–Sat: 6:00 AM</li></ul></div>
+        <div><h4 class="font-semibold text-white text-sm uppercase tracking-widest mb-5 border-b border-white/10 pb-3">We Believe</h4><ul class="space-y-2 text-sm text-gray-400"><li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-500 mt-0.5 flex-shrink-0"></i> The Holy Trinity</li><li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-500 mt-0.5 flex-shrink-0"></i> Death &amp; resurrection of Jesus</li><li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-500 mt-0.5 flex-shrink-0"></i> Salvation by grace through faith</li><li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-500 mt-0.5 flex-shrink-0"></i> Power of the Holy Spirit</li><li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-500 mt-0.5 flex-shrink-0"></i> Divine healing &amp; supernatural</li></ul></div>
+      </div>
+    </div>
+    <div class="border-t border-white/10"><div class="max-w-7xl mx-auto px-4 py-6 flex flex-col sm:flex-row items-center justify-between gap-4"><p class="text-gray-500 text-sm">&copy; <span id="current-year"></span> Uwepo Church · Parousia Global. All rights reserved.</p><p class="text-gray-600 text-xs"><em>"Everyday In The Presence"</em></p></div></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

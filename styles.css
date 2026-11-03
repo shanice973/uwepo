@@ -1,0 +1,188 @@
+/* ============================================
+   UWEPO CHURCH – styles.css
+   Custom styles extending Tailwind CSS
+   ============================================ */
+
+/* ---- Smooth Scroll ---- */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ---- Custom Scrollbar ---- */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+::-webkit-scrollbar-thumb {
+  background: #c9a227;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b8860b;
+}
+
+/* ---- Hero Background ---- */
+.hero-section {
+  background-color: #0f0f0f;
+}
+
+.hero-bg {
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(201, 162, 39, 0.12) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(201, 162, 39, 0.08) 0%, transparent 50%),
+    linear-gradient(135deg, #0d0d0d 0%, #1a1208 50%, #0d0d0d 100%);
+}
+
+/* ---- Navbar State ---- */
+/* Default: transparent over hero */
+#navbar {
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Scrolled state – applied via JS */
+#navbar.scrolled {
+  background-color: rgba(15, 15, 15, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 1px 0 rgba(201, 162, 39, 0.2);
+}
+
+/* Nav link colors: white when transparent, muted when scrolled */
+.nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  transition: color 0.2s ease;
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #c9a227;
+  border-radius: 2px;
+  transition: width 0.25s ease;
+}
+.nav-link:hover {
+  color: #fbbf24;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Active navigation link */
+.nav-link.active-link {
+  color: #fbbf24 !important;
+  font-weight: 600;
+}
+.nav-link.active-link::after {
+  width: 100% !important;
+}
+
+/* Keep logo text visible on dark backgrounds */
+.nav-title  { transition: color 0.3s ease; }
+.nav-subtitle { transition: color 0.3s ease; }
+
+/* When scrolled, title keeps white; subtitle keeps gold-300 (inherited from class) */
+
+/* ---- Section Entrance Animation ---- */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+[data-animate].in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger child cards inside animated containers */
+[data-animate] .service-card:nth-child(1) { transition-delay: 0.05s; }
+[data-animate] .service-card:nth-child(2) { transition-delay: 0.12s; }
+[data-animate] .service-card:nth-child(3) { transition-delay: 0.19s; }
+[data-animate] .service-card:nth-child(4) { transition-delay: 0.26s; }
+[data-animate] .service-card:nth-child(5) { transition-delay: 0.33s; }
+[data-animate] .service-card:nth-child(6) { transition-delay: 0.40s; }
+
+[data-animate] .ministry-card:nth-child(1) { transition-delay: 0.05s; }
+[data-animate] .ministry-card:nth-child(2) { transition-delay: 0.12s; }
+[data-animate] .ministry-card:nth-child(3) { transition-delay: 0.19s; }
+[data-animate] .ministry-card:nth-child(4) { transition-delay: 0.26s; }
+[data-animate] .ministry-card:nth-child(5) { transition-delay: 0.33s; }
+[data-animate] .ministry-card:nth-child(6) { transition-delay: 0.40s; }
+
+/* ---- Focus styles for accessibility ---- */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid #c9a227;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ---- Form select arrow fix (dark bg) ---- */
+select option {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+/* ---- Prevent layout shift for hero logo text on mobile ---- */
+@media (max-width: 639px) {
+  .hero-section h1 span {
+    display: inline;
+  }
+}
+
+/* ---- Gold shimmer on logo hover ---- */
+.nav-logo {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.nav-logo:hover {
+  transform: scale(1.05) rotate(-2deg);
+  box-shadow: 0 0 20px rgba(201, 162, 39, 0.4);
+}
+
+/* ---- Blockquote styling ---- */
+blockquote p {
+  position: relative;
+}
+blockquote p::before {
+  content: '\201C';
+  font-size: 6rem;
+  line-height: 0;
+  position: absolute;
+  top: 2.5rem;
+  left: -2rem;
+  color: rgba(201, 162, 39, 0.15);
+  font-family: 'Playfair Display', serif;
+  pointer-events: none;
+}
+
+/* ---- Responsive typography tweaks ---- */
+@media (max-width: 480px) {
+  blockquote p {
+    font-size: 1.125rem;
+  }
+  blockquote p::before {
+    display: none;
+  }
+}
+
+/* ---- Print styles ---- */
+@media print {
+  #navbar,
+  #mobile-menu {
+    position: static;
+    background: white;
+    color: black;
+  }
+  .hero-section {
+    min-height: auto;
+    padding: 2rem;
+  }
+}
